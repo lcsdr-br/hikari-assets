@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hikari Bonsai</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif}
+.hk{--cr:#F5F0E8;--gd:#1C2B1A;--ea:#8B6F47;--bg:#E8DDD0;--bd:rgba(28,43,26,.12);color:var(--gd)}
+.hk-bar{background:var(--gd);color:var(--bg);text-align:center;font-size:11px;padding:8px 1rem;letter-spacing:.07em;font-weight:300}
+.hk-nav{background:var(--cr);border-bottom:.5px solid var(--bd);display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:46px}
+.hk-nl{display:flex;gap:2rem}
+.hk-nl a,.hk-nr a{color:var(--gd);text-decoration:none;font-size:12px;opacity:.68;letter-spacing:.03em}
+.hk-nl a:hover,.hk-nr a:hover{opacity:1}
+.hk-nr{display:flex;align-items:center;gap:1.75rem}
+.hk-ic{display:flex;gap:1.1rem;font-size:18px;color:var(--gd);opacity:.72}
+.hk-logo-band{background:var(--cr);border-bottom:.5px solid var(--bd);text-align:center;padding:.95rem 0 1.05rem}
+.hk-logo{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:400;letter-spacing:.18em;color:var(--gd);text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.hk-lk{color:var(--ea);font-size:22px;line-height:1}
+.hk-ld{width:.5px;height:16px;background:rgba(28,43,26,.25);display:inline-block}
+.hk-hero{display:flex;height:520px;background:var(--cr)}
+.hk-ht{flex:1;padding:3rem 2.5rem 3rem 3.5rem;display:flex;flex-direction:column;justify-content:center}
+.hk-ey{font-size:10px;letter-spacing:.18em;color:var(--ea);margin-bottom:1.1rem;font-weight:400;text-transform:uppercase;display:flex;align-items:center;gap:.75rem}
+.hk-ey::before{content:'';display:block;width:22px;height:.5px;background:var(--ea)}
+.hk-h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;color:var(--gd);margin:0 0 1.4rem;display:flex;flex-direction:column;line-height:1}
+.hk-l1{font-size:92px;letter-spacing:.04em;line-height:1.0}
+.hk-l2{font-size:47px;letter-spacing:.04em;line-height:1.1;margin-top:.08em}
+.hk-desc{font-size:13px;color:#4A5E48;line-height:1.75;max-width:290px;font-weight:300;margin-bottom:2.25rem}
+.hk-bp{background:var(--gd);color:var(--cr);padding:11px 28px;font-size:11.5px;letter-spacing:.06em;font-family:'Inter',sans-serif;font-weight:400;text-decoration:none;display:inline-block}
+.hk-bg{color:var(--gd);font-size:12px;font-weight:400;text-decoration:none;border-bottom:.5px solid rgba(28,43,26,.5);padding-bottom:1px;letter-spacing:.03em;opacity:.75}
+.hk-hi{flex:1;background:var(--gd);overflow:hidden;position:relative}
+.hk-hi img{width:100%;height:100%;object-fit:cover;object-position:center 60%;display:block}
+</style>
+</head>
+<body>
+<div class="hk">
+  <div class="hk-bar">Frete grátis em pedidos acima de R$&nbsp;350 &nbsp;·&nbsp; +5% de desconto no Pix</div>
+  <nav class="hk-nav" aria-label="Navegação principal">
+    <div class="hk-nl">
+      <a href="#">Bonsais</a>
+      <a href="#">Vasos & Ferramentas</a>
+      <a href="#">Cursos</a>
+      <a href="#">Serviços</a>
+    </div>
+    <div class="hk-nr">
+      <a href="#">Sobre nós</a>
+      <div class="hk-ic" aria-hidden="true">
+        <span>&#xe3e8;</span>
+        <span>&#xe374;</span>
+        <span>&#xe57f;</span>
+      </div>
+    </div>
+  </nav>
+  <div class="hk-logo-band">
+    <a href="#" class="hk-logo">
+      <span class="hk-lk">光</span>
+      <span class="hk-ld" aria-hidden="true"></span>
+      HIKARI BONSAI
+    </a>
+  </div>
+  <section class="hk-hero" aria-label="Banner principal">
+    <div class="hk-ht">
+      <p class="hk-ey">Desde 2017 · Florianópolis, SC</p>
+      <h1 class="hk-h1">
+        <span class="hk-l1">EXISTA</span>
+        <span class="hk-l2">NO INSTANTE</span>
+      </h1>
+      <p class="hk-desc">Bonsais, cursos e serviços para todos os estágios da prática.</p>
+      <div style="display:flex;gap:1.25rem;align-items:center">
+        <a href="#" class="hk-bp">Explorar bonsais</a>
+        <a href="#" class="hk-bg">Ver cursos &nbsp;→</a>
+      </div>
+    </div>
+    <div class="hk-hi">
+      <img src="https://raw.githubusercontent.com/lcsdr-br/hikari-assets/refs/heads/main/bonsai_hero.png" alt="Bonsai Hikari – cerejeira em flor" style="width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block">
+    </div>
+  </section>
+</div>
+
+<script>
+(async function() {
+  const img = document.getElementById('bimg');
+  const btn = document.getElementById('pick-btn');
+
+  // Try to auto-load via window.fs
+  const tries = [
+    ['bonsai_hero.png','image/png']
+  ];
+  for (const [name, mime] of tries) {
+    try {
+      const data = await window.fs.readFile(name);
+      let bin = '';
+      new Uint8Array(data).forEach(b => bin += String.fromCharCode(b));
+      img.src = `data:${mime};base64,${btoa(bin)}`;
+      btn.style.display = 'none';
+      return;
+    } catch(e) {}
+  }
+
+  // Fallback: manual file picker
+  // fallback silencioso
+  console.warn('Imagem não encontrada.');
+})();
+</script>
+</body>
+</html>
